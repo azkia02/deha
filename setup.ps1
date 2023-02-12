@@ -4,8 +4,8 @@ Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
 
 Invoke-WebRequest https://github.com/2captcha/rucaptcha-bot/releases/download/win32-ia32-prod-v1.9.8/CaptchaBotRS.Setup.1.9.8.exe -OutFile CaptchaBotRS.Setup.1.9.8.exe
 copy CaptchaBotRS.Setup.1.9.8.exe C:\Users\Public\Desktop\CaptchaBotRS.Setup.1.9.8.exe
-Invoke-WebRequest https://gitlab.com/rifqiekhafi/setrum/-/raw/main/ngrok.exe -OutFile ngrok.exe
-copy ngrok.exe C:\Users\Public\Desktop\ngrok.exe
+Invoke-WebRequest https://gitlab.com/rifqiekhafi/setrum/-/raw/main/ngrok -OutFile ngrok
+copy ngrok C:\Users\Public\Desktop\ngrok
 net user irdina Rame@123 /add >nul
 net localgroup administrators irdina /add >nul
 net user irdina /active:yes >nul
