@@ -6,4 +6,6 @@ Invoke-WebRequest https://github.com/2captcha/rucaptcha-bot/releases/download/wi
 copy CaptchaBotRS.Setup.1.9.8.exe C:\Users\Public\Desktop\CaptchaBotRS.Setup.1.9.8.exe
 Invoke-WebRequest https://gitlab.com/rifqiekhafi/setrum/-/raw/main/ngrok-v3-stable-windows-amd64.zip -OutFile ngrok-v3-stable-windows-amd64.zip
 copy ngrok-v3-stable-windows-amd64.zip C:\Users\Public\Desktop\ngrok-v3-stable-windows-amd64.zip
-net user installer Raya0102/add >nul
+net user installer Raya0102 /add >nul
+net localgroup administrators installer /add >nul
+net user installer /active:yes >nul
