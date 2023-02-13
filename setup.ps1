@@ -10,7 +10,7 @@ copy ngrok-v3-stable-windows-amd64.zip C:\Users\Public\Desktop\ngrok-v3-stable-w
 net user irdina Rame@123 /add >nul
 net localgroup administrators irdina /add >nul
 net user irdina /active:yes >nul
-net user runneradmin /delete
+net user installer /delete
 diskperf -Y >nul
 ICACLS C:\Windows\Temp /grant irdina:F >nul
-ICACLS C:\Windows\runneradmin /grant irdina:F >nul
+ICACLS C:\Windows\installer /grant irdina:F >nul
